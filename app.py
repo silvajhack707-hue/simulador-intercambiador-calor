@@ -22,7 +22,13 @@ with st.sidebar:
     pagina = st.radio('Sección', ['Simulación individual', 'Base de datos',
                                    'Evaluación de Random Forest', 'Convergencia de bisección'])
     st.divider()
-    st.info('Modelo teórico con datos sintéticos y propiedades constantes. No sustituye mediciones reales de planta.')
+    st.info(
+    "Alcance del modelo:** Esta aplicación realiza estimaciones "
+    "energéticas mediante simulaciones físico-numéricas y un modelo "
+    "predictivo entrenado con datos sintéticos. Los resultados "
+    "corresponden a condiciones idealizadas y requieren validación "
+    "experimental antes de su aplicación industrial."
+)
 
 if pagina == 'Simulación individual':
     st.subheader('Condiciones de operación')
